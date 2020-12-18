@@ -4,7 +4,7 @@
 }
 
 html {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
@@ -13,6 +13,30 @@ html {
 body {
     margin: 0;
     width: 100%;
+}
+.h-100 {
+    height: 100%;
+}
+.d-flex {
+    display: flex;
+}
+h4 {
+    font-size: 1.25rem;
+}
+h5 {
+    font-size: 20px;
+}
+h6 {
+    font-size: 18px;
+}
+.m-y-20 {
+    margin: 20px 0;
+}
+.m-y-10 {
+    margin: 10px 0;
+}
+.theme-blue {
+    color: #007AE9
 }
 .dream-team {
     padding: 128px 16px;
@@ -41,7 +65,7 @@ section .section-heading {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: rgba(245, 245, 245, 0.3);
+    background-color: rgba(245, 245, 245, 0.93);
     box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15) !important;
     z-index: 9996;
 }
@@ -60,6 +84,8 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
+    width: 100%;
+    overflow-x: hidden;
 }
 @media (min-width: 48rem) {
     .grid-container {
@@ -92,7 +118,7 @@ footer {
     text-transform: uppercase;
 }
 .widget {
-    margin-top: 20px;
+    margin: 20px 0;
 }
 /**COL**/
 #roman .mx-0 {
@@ -170,12 +196,27 @@ footer {
     float: right;
     color: #6E798C;
 }
-
+#roman .widget-header {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0 1.25rem;
+}
 #roman .widget-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     min-height: 1px;
     padding: 1.25rem;
+}
+#roman .widget-footer {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+#roman .separator {
+    margin: 1.25rem;
+    border: 1px solid #EBECED;
 }
 #roman .widget-text {
     color: #374A59;
