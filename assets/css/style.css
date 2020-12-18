@@ -14,8 +14,12 @@ body {
     margin: 0;
     width: 100%;
 }
+
 .h-100 {
     height: 100%;
+}
+.w-100 {
+    width: 100%;
 }
 .d-flex {
     display: flex;
@@ -35,11 +39,21 @@ h6 {
 .m-y-10 {
     margin: 10px 0;
 }
+.p-y-15 {
+    padding-top:  15px;
+    padding-bottom:  15px;
+}
+.p-x-15 {
+    padding-left:  15px;
+    padding-right:  15px;
+}
 .theme-blue {
     color: #007AE9
 }
 .dream-team {
     padding: 128px 16px;
+    background: linear-gradient(90.02deg, #25335A 0.02%, #141824 113.01%);
+    color: #fff;
 }
 .text-align-center {
     text-align: center !important;
@@ -108,8 +122,9 @@ footer {
     width: 100%;
 }
 .cell {
-    display: block;
+    display: flex;
     width: 100%;
+    margin: 10px auto;
 }
 .top-bar .grid-x {
     flex-wrap: nowrap;
@@ -120,8 +135,24 @@ footer {
 .widget {
     margin: 20px 0;
 }
-
-#roman .mx-0 {
+.m-y-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.m-x-0 {
+    margin-right: 0;
+    margin-left: 0;
+}
+/**SECTION 1**/
+.dark-mode {
+    margin-left: auto;
+    order: 2;
+}
+#roman .m-y-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#roman .m-x-0 {
     margin-right: 0;
     margin-left: 0;
 }
@@ -132,24 +163,32 @@ footer {
     flex-wrap: wrap;
 }
 
-/**COL**/
 @media (min-width: 576px) {
     #roman .col-sm-5 {
         -ms-flex: 0 0 41.666667%;
         flex: 0 0 41.666667%;
         max-width: 41.666667%;
     }
-}
-@media (min-width: 576px) {
+    #roman .col-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
     #roman .col-sm-7 {
         -ms-flex: 0 0 58.333333%;
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    #roman .col-sm-12 {
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }
-/**COL**/
 
-/**SECTION 1**/
 #roman h3 {
     font-family: 'DM Serif Display', serif;
     font-size: 32px;
@@ -202,7 +241,7 @@ footer {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     min-height: 1px;
-    padding: 0 1.25rem;
+    padding: 1.25rem;
 }
 #roman .widget-body {
     -ms-flex: 1 1 auto;
@@ -231,5 +270,20 @@ footer {
     justify-content: center;
     align-content: center;
     align-items: center;
+}
+#roman p > .bold {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #081F32;
+}
+#roman p > .tin {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #6E798C;
+}
+#roman .theme-dark {
+    background: linear-gradient(90.02deg, #25335A 0.02%, #141824 113.01%);
 }
 /**END SECTION 1**/
