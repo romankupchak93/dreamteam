@@ -41,7 +41,7 @@ h6 {
 .dream-team {
     padding: 128px 16px;
 }
-.align-center {
+.text-align-center {
     text-align: center !important;
 }
 section {
@@ -120,7 +120,7 @@ footer {
 .widget {
     margin: 20px 0;
 }
-/**COL**/
+
 #roman .mx-0 {
     margin-right: 0;
     margin-left: 0;
@@ -131,6 +131,8 @@ footer {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
+
+/**COL**/
 @media (min-width: 576px) {
     #roman .col-sm-5 {
         -ms-flex: 0 0 41.666667%;
@@ -147,7 +149,7 @@ footer {
 }
 /**COL**/
 
-/**WIDGET**/
+/**SECTION 1**/
 #roman h3 {
     font-family: 'DM Serif Display', serif;
     font-size: 32px;
@@ -230,3 +232,4 @@ footer {
     align-content: center;
     align-items: center;
 }
+/**END SECTION 1**/
