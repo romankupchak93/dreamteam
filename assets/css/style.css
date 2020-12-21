@@ -360,7 +360,7 @@ footer {
   background: rgba(31, 38, 135, 0.47);
   border: 1px solid rgba(219, 219, 219, 0.1);
   overflow: hidden;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
 /* Ozarko standart style */
@@ -533,15 +533,14 @@ footer {
 
 .onv .onv-cards.glass .social-btn {
   border: 2px solid rgba(219, 219, 219, 0.6);
-  box-shadow: 0 8px 32px 0 rgba(29, 171, 242, 0.37); 
+  box-shadow: 0 8px 32px 0 rgba(29, 171, 242, 0.37);
 }
 
 .onv .onv .onv-cards.glass .marketing-btn {
   border: 2px solid rgba(219, 219, 219, 0.6);
   background: transparent !important;
-  box-shadow: 0 8px 32px 0 rgba(70, 214, 140, 0.37); 
+  box-shadow: 0 8px 32px 0 rgba(70, 214, 140, 0.37);
 }
-
 
 .onv .onv-cards.glass .second-card .social-btn:hover,
 .onv .onv-cards.glass .third-card .marketing-btn:hover {
@@ -552,14 +551,13 @@ footer {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.onv  .onv-cards.glass .second-card .social-btn:hover {
-    box-shadow: 0 8px 32px 0 rgba(29, 171, 242, 0.7);
+.onv .onv-cards.glass .second-card .social-btn:hover {
+  box-shadow: 0 8px 32px 0 rgba(29, 171, 242, 0.7);
 }
 
-.onv  .onv-cards.glass .third-card .marketing-btn:hover {
-      box-shadow: 0 8px 32px 0 rgba(70, 214, 140, 0.7);
+.onv .onv-cards.glass .third-card .marketing-btn:hover {
+  box-shadow: 0 8px 32px 0 rgba(70, 214, 140, 0.7);
 }
-
 
 .onv .onv-cards.glass .marketing-btn {
   background: rgba(70, 214, 140, 0.6);
