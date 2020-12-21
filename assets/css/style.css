@@ -536,10 +536,11 @@ footer {
   box-shadow: 0 8px 32px 0 rgba(29, 171, 242, 0.37);
 }
 
-.onv .onv .onv-cards.glass .marketing-btn {
+.onv .onv-cards.glass .marketing-btn {
   border: 2px solid rgba(219, 219, 219, 0.6);
   background: transparent !important;
   box-shadow: 0 8px 32px 0 rgba(70, 214, 140, 0.37);
+  color: #141824;
 }
 
 .onv .onv-cards.glass .second-card .social-btn:hover,
@@ -557,11 +558,6 @@ footer {
 
 .onv .onv-cards.glass .third-card .marketing-btn:hover {
   box-shadow: 0 8px 32px 0 rgba(70, 214, 140, 0.7);
-}
-
-.onv .onv-cards.glass .marketing-btn {
-  background: rgba(70, 214, 140, 0.6);
-  color: #141824;
 }
 
 /* Ozarko media */
