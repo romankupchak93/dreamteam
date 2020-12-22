@@ -289,13 +289,13 @@ footer {
 
 /* Ozarko section */
 
-.onv * {
+#onv * {
   margin: 0;
   padding: 0;
   z-index: 1;
 }
 
-.onv {
+#onv {
   position: relative;
   min-height: 110vh;
   width: 100%;
@@ -303,7 +303,17 @@ footer {
     no-repeat center center/cover;
 }
 
-.onv .onv-box {
+#onv::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  rgba(31, 38, 135, 0.05);
+}
+
+#onv .onv-box {
   min-height: 110vh;
   max-width: 1200px;
   margin: 0 auto;
@@ -313,7 +323,7 @@ footer {
   flex-direction: column;
 }
 
-.onv .onv-switch {
+#onv .onv-switch {
   height: 100px;
   width: 100%;
   display: flex;
@@ -321,7 +331,7 @@ footer {
   align-items: center;
 }
 
-.onv .switch-container {
+#onv .switch-container {
   width: 70px;
   height: 37px;
   margin: 0 20px;
@@ -332,7 +342,7 @@ footer {
   cursor: pointer;
 }
 
-.onv .switch-container.move {
+#onv .switch-container.move {
   background: transparent;
   border: 1px solid rgba(219, 219, 219, 0.1);
   overflow: hidden;
@@ -340,13 +350,13 @@ footer {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
-.onv .style-switch {
+#onv .style-switch {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
 }
 
-.onv .switch-container-box {
+#onv .switch-container-box {
   width: 30px;
   height: 30px;
   background: #8d3af3;
@@ -355,7 +365,7 @@ footer {
   transition: transform 300ms;
 }
 
-.onv .switch-container.move .switch-container-box {
+#onv .switch-container.move .switch-container-box {
   transform: translateX(100%);
   background: rgba(31, 38, 135, 0.47);
   border: 1px solid rgba(219, 219, 219, 0.1);
@@ -365,7 +375,7 @@ footer {
 
 /* Ozarko standart style */
 
-.onv .onv-cards {
+#onv .onv-cards {
   max-width: 1100px;
   display: flex;
   align-items: center;
@@ -373,7 +383,7 @@ footer {
   padding: 20px;
 }
 
-.onv .price-card {
+#onv .price-card {
   position: relative;
   margin-top: 50px;
   padding: 30px;
@@ -386,15 +396,15 @@ footer {
   transition: transform 0.4s ease-in, background 0.4s ease-in;
 }
 
-.onv .price-card:nth-child(3) {
+#onv .price-card:nth-child(3) {
   margin-right: 0;
 }
 
-.onv .price-card:hover {
+#onv .price-card:hover {
   transform: scale(1.04);
 }
 
-.onv .price {
+#onv .price {
   margin-top: 20px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 100;
@@ -402,49 +412,49 @@ footer {
   font-size: 16px;
 }
 
-.onv .price > span {
+#onv .price > span {
   font-family: 'DM Serif Display', serif;
   font-size: 50px;
   color: #081f32;
 }
 
-.onv .license {
+#onv .license {
   font-family: 'DM Serif Display', serif;
   font-weight: 400;
   font-size: 28px;
 }
 
-.onv .first-card .license {
+#onv .first-card .license {
   color: #f3b10e;
 }
 
-.onv .second-card .license {
+#onv .second-card .license {
   color: #1dabf2;
 }
 
-.onv .third-card .license {
+#onv .third-card .license {
   color: #46d68c;
 }
 
-.onv .price-desc {
+#onv .price-desc {
   font-family: 'Open Sans', sans-serif;
   color: #92969d;
   font-size: 16px;
   font-weight: 200;
 }
 
-.onv .line {
+#onv .line {
   width: 290px;
   height: 1.5px;
   margin: 30px 0;
   background-color: #ebeced;
 }
 
-.onv .features-list {
+#onv .features-list {
   list-style: none;
 }
 
-.onv .features-item {
+#onv .features-item {
   margin: 10px 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -452,23 +462,23 @@ footer {
   color: #6e798c;
 }
 
-.onv .features-item > i {
+#onv .features-item > i {
   margin-right: 10px;
 }
 
-.onv .first-card .features-item > i {
+#onv .first-card .features-item > i {
   color: #f3b10e;
 }
 
-.onv .second-card .features-item > i {
+#onv .second-card .features-item > i {
   color: #1dabf2;
 }
 
-.onv .third-card .features-item > i {
+#onv .third-card .features-item > i {
   color: #46d68c;
 }
 
-.onv .btn {
+#onv .btn {
   margin-top: 60px;
   width: 100%;
   padding: 13px;
@@ -485,21 +495,21 @@ footer {
   transition: all 0.3s ease-in;
 }
 
-.onv .btn:focus {
+#onv .btn:focus {
   outline: none;
 }
 
-.onv .basic-btn {
+#onv .basic-btn {
   color: #798289;
   background: #ebeced;
 }
 
-.onv .social-btn {
+#onv .social-btn {
   border: 2px solid #798289;
   background: transparent;
 }
 
-.onv .marketing-btn {
+#onv .marketing-btn {
   background: #46d68c;
   border: 2px solid #46d68c;
   color: #fff;
@@ -507,7 +517,7 @@ footer {
 
 /* Start glass section */
 
-.onv .onv-cards.glass .price-card {
+#onv .onv-cards.glass .price-card {
   position: relative;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(219, 219, 219, 0.1);
@@ -516,35 +526,35 @@ footer {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
-.onv .onv-cards.glass .price-card:hover {
+#onv .onv-cards.glass .price-card:hover {
   background: rgba(255, 255, 255, 0.6);
 }
 
-.onv .onv-cards.glass .btn {
+#onv .onv-cards.glass .btn {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border: 0px solid rgba(255, 255, 255, 0.18);
 }
 
-.onv .onv-cards.glass .basic-btn {
+#onv .onv-cards.glass .basic-btn {
   background: #f1f1f1;
   box-shadow: 0 3px 12px 0 rgba(243, 177, 14, 0.37);
 }
 
-.onv .onv-cards.glass .social-btn {
+#onv .onv-cards.glass .social-btn {
   border: 2px solid rgba(219, 219, 219, 0.6);
   box-shadow: 0 8px 32px 0 rgba(29, 171, 242, 0.37);
 }
 
-.onv .onv-cards.glass .marketing-btn {
+#onv .onv-cards.glass .marketing-btn {
   border: 2px solid rgba(219, 219, 219, 0.6);
   background: transparent !important;
   box-shadow: 0 8px 32px 0 rgba(70, 214, 140, 0.37);
   color: #141824;
 }
 
-.onv .onv-cards.glass .second-card .social-btn:hover,
-.onv .onv-cards.glass .third-card .marketing-btn:hover {
+#onv .onv-cards.glass .second-card .social-btn:hover,
+#onv .onv-cards.glass .third-card .marketing-btn:hover {
   transform: scale(1.05);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -552,23 +562,23 @@ footer {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.onv .onv-cards.glass .second-card .social-btn:hover {
+#onv .onv-cards.glass .second-card .social-btn:hover {
   box-shadow: 0 8px 32px 0 rgba(29, 171, 242, 0.7);
 }
 
-.onv .onv-cards.glass .third-card .marketing-btn:hover {
+#onv .onv-cards.glass .third-card .marketing-btn:hover {
   box-shadow: 0 8px 32px 0 rgba(70, 214, 140, 0.7);
 }
 
 /* Ozarko media */
 
 @media (max-width: 1200px) {
-  .onv .onv-cards {
+  #onv .onv-cards {
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  .onv .price-card {
+  #onv .price-card {
     margin: 10px;
   }
 }
