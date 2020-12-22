@@ -567,6 +567,7 @@ footer {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border: 0px solid rgba(255, 255, 255, 0.18);
+  color: #081f32;
 }
 
 #onv .onv-cards.glass .basic-btn {
